@@ -2,7 +2,6 @@
 #include<conio.h>
 void main()
 {
-
     int r;
     int sum=0;
     int temp;
@@ -10,7 +9,7 @@ void main()
     int big=0;
     int i;
     int j;
-
+    
     for(i=100;i<=999;i++)
     {
         for(j=i;j<=999;j++)
