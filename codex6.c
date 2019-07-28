@@ -12,13 +12,13 @@ void main()
 		squareofsum*=squareofsum;
 		difference=(sumofsquare-squareofsum);
 		if(difference<0)
-        {
-            printf("%d",-difference);
-        }
+        	{
+            		printf("%d",-difference);
+       	        }
 
 		else
-        {
-            printf("%d",difference);
-        }
+        	{
+            		printf("%d",difference);
+        	}
     getch();
 }
