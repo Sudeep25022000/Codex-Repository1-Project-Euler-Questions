@@ -28,13 +28,9 @@ void main()
             if((product==sum)&&(big<product))
                 {
                     big=product;
-                }
-
-            
+                }            
         }
     }
-
     printf("%u",big);
-
     getch();
 }
