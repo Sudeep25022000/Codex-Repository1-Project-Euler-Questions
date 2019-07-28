@@ -8,8 +8,7 @@ void main()
     int product;
     int big=0;
     int i;
-    int j;
-    
+    int j;    
     for(i=100;i<=999;i++)
     {
         for(j=i;j<=999;j++)
@@ -24,7 +23,6 @@ void main()
                 sum=(sum*10)+r;
                 temp=temp/10;
             }
-
             if((product==sum)&&(big<product))
                 {
                     big=product;
