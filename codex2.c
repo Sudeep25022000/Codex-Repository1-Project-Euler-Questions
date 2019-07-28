@@ -7,9 +7,7 @@ void main()
     int t2=1;
     int nextTerm;
     int sum=0;
-    for(i=1;i<=4000000;i++)
-    {
-        if(t1>=1 && t1<=4000000)
+    while(nextTerm<4000000)
         {
             nextTerm=t1+t2;
             t1=t2;
@@ -21,7 +19,7 @@ void main()
                 }
         }
 
-    }
+
     printf("Sum: %u",sum);
 
 }
