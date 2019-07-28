@@ -26,14 +26,12 @@ void main()
                 temp=temp/10;
             }
 
-            if(product==sum)
-            {
-                if(big<product)
+            if((product==sum)&&(big<product))
                 {
                     big=product;
                 }
 
-            }
+            
         }
     }
 
