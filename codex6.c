@@ -2,26 +2,23 @@
 #include<conio.h>
 void main()
 {
-    int i;
-    int num1,num2;
-    int sum1=0,sum2=0;
+    int num=100;
+    int sumofsquare;
+    int squareofsum;
     int difference;
-    for(i=1;i<=100;i++)
-    {
-        num1=i*i;
-        sum1=sum1+num1;
-        num1=0;
-    }
 
-    for(i=1;i<=100;i++)
-    {
-        sum2=sum2+i;
-    }
-    num2=sum2*sum2;
+		sumofsquare=(num*(num+1)*(2*num+1))/6;
+		squareofsum=(num*(num+1))/2;
+		squareofsum*=squareofsum;
+		difference=(sumofsquare-squareofsum);
+		if(difference<0)
+        {
+            printf("%d",-difference);
+        }
 
-    difference= num2-sum1;
-    printf("%u",difference);
-
-
+		else
+        {
+            printf("%d",difference);
+        }
     getch();
 }
