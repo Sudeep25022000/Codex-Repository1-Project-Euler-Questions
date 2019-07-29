@@ -2,22 +2,22 @@
 #include<conio.h>
 void main()
 {
-   int i;
-   int j=3;
    int count;
+   int j=3;
+   int check;
 
-   for (i=2;i<=10001;)
+   for(count=2;count<=10001;)
    {
-      for (count=2;count<=j-1;count++)
+      for(check=3;check<=j;check=check+2)//avoiding the check of odd number during iteration
       {
-         if(j%count==0)
+         if(j%check==0)
             break;
       }
-      if (count==j)
+      if (check==j)
       {
-         if(i==10001)
+         if(count==10001)
          {printf("%d\n",j);}
-         i++;
+         count++;
       }
       j++;
    }
