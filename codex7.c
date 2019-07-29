@@ -8,7 +8,7 @@ void main()
 
    for(count=2;count<=10001;)
    {
-      for(check=3;check<=j;check=check+2)//avoiding the check of odd number during iteration
+      for(check=3;check<=j;check=check+2)
       {
          if(j%check==0)
             break;
@@ -16,10 +16,12 @@ void main()
       if (check==j)
       {
          if(count==10001)
-         {printf("%d\n",j);}
+         {
+             printf("%d\n",j);
+         }
          count++;
       }
-      j++;
+      j=j+2;
    }
 
    getch();
