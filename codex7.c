@@ -2,30 +2,34 @@
 #include<conio.h>
 void main()
 {
-   int count;
-   int j=5;
-   int check;
+    int i;
+    int j;
+    int k;
+    int count=2;
+    for(i=1;count<10001;i++)
+    {
+        if(isprime((6*i)-1)==0)
+        {
+            k=(6*i)-1;
+            count++;
+        }
+        if(isprime((6*i)+1)==0 && count<10001)
+        {
+            k=(6*i)+1;
+            count++;
+        }
+    }
+    printf("%d",k);
+}
 
-   for(count=3;count<=10001;)
-   {
-      for(check=3;check<=j;check=check+2)
-      {
-         if(j>5 && j%10==5)
-            break;
+int isprime(int a)
+{int i;
+    for(i=2;i<=sqrt(a);i++)
+    {
+        if(a%i==0)
+            return 1;
+        else
+            ;
 
-         else if(j%check==0)
-            break;
-      }
-      if(check==j)
-      {
-         if(count==10001)
-         {
-             printf("%d\n",j);
-         }
-         count++;
-      }
-      j=j+2;
-   }
-
-   getch();
+    }return 0;
 }
