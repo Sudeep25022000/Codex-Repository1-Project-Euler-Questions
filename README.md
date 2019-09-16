@@ -1,4 +1,3 @@
-# Hello-World
-A new repository
-Hello! Github,myself Sudeep Ranjan Swain.
-Love to code user interface programs.
+- **Project Euler Solutions**
+   - The first 10 solved questions of project Euler.
+     - A contribution to Codex-S'o'A University.
